@@ -8,7 +8,7 @@ defmodule SkoleWeb.Router do
   scope "/", SkoleWeb do
     pipe_through :api # Use the API stack
 
-    get "/", PageController, :index
+    get "/", IndexController, :index
   end
 
 end
