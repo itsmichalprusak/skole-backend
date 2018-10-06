@@ -29,14 +29,11 @@ config :skole, SkoleWeb.Endpoint,
 # configured to run both http and https servers on
 # different ports.
 
-# Watch static and templates for browser reloading.
+# Watch statics for browser reloading.
 config :skole, SkoleWeb.Endpoint,
   live_reload: [
     patterns: [
-      ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
-      ~r{priv/gettext/.*(po)$},
-      ~r{lib/skole_web/views/.*(ex)$},
-      ~r{lib/skole_web/templates/.*(eex)$}
+      ~r{priv/gettext/.*(po)$}
     ]
   ]
 

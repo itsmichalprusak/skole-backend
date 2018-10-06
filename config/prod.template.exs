@@ -8,12 +8,12 @@ use Mix.Config
 # so that the app is fully functional.
 
 config :skole, SkoleWeb.Endpoint,
-  secret_key_base: "FJMIOaM139I7gSjBEO3F1wpInpsXxbLGn3nDXpQQ3M8a/iHWX3oh8oAl+zBcf06s"
+  secret_key_base: "xxx"
 
 # Configure your database
 config :skole, Skole.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "skole_prod",
+  username: "xxx",
+  password: "xxx",
+  database: "xxx",
   pool_size: 15
