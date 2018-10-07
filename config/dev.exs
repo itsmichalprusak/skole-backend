@@ -46,9 +46,4 @@ config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
 config :skole, Skole.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "skole_dev",
-  hostname: "localhost",
-  pool_size: 10
+  keyspace: "skole"

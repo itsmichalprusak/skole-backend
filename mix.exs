@@ -19,6 +19,7 @@ defmodule Skole.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [
+      applications: [:cqerl, :cassandra_ecto],
       mod: {Skole.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
@@ -40,7 +41,10 @@ defmodule Skole.Mixfile do
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:cqerl, github: "matehat/cqerl", tag: "v1.0.8"},
+      {:re2, github: "tuncer/re2", tag: "v1.8.5", override: true},
+      {:cassandra_ecto, "~> 0.4.0"}
     ]
   end
 

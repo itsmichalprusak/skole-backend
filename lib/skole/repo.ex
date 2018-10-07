@@ -1,5 +1,7 @@
 defmodule Skole.Repo do
-  use Ecto.Repo, otp_app: :skole
+  use Ecto.Repo,
+      otp_app: :skole,
+      adapter: Cassandra.Ecto
 
   @doc """
   Dynamically loads the repository url from the
